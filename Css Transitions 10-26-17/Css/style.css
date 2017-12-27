@@ -1,0 +1,52 @@
+.element {
+  display: inline-block;
+  background-color: #0074d9;
+  height: 200px;
+  width: 200px;
+  font-size: 75px;
+  padding: 5px;
+  color: white;
+  margin-right: 20px;
+  margin-left: 20px;
+  animation: skew 3s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
+  opacity: .7;
+}
+
+.clone{
+  display: inline-block;
+  background-color: #0074d9;
+  height: 200px;
+  width: 200px;
+  font-size: 75px;
+  padding: 20px;
+  color: white;
+  margin-right: 20px;
+  margin-left: 20px;
+  animation: skew 3s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
+  opacity: .7;
+}
+
+@keyframes skew {
+  0% {
+    transform: skewX(200deg);
+  }
+  100% {
+    transform: skewX(-80deg);
+  }
+}
+
+
+body, html {
+  height: 100%;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
